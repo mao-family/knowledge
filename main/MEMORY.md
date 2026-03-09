@@ -16,6 +16,7 @@
 - Software/skill installs, uninstalls, and directory structure changes → delegate to MAOGEN
 - Gateway restart kills current session — avoid during active conversations
 - Progressive disclosure: keep MEMORY.md concise, link to external docs for details
+- Workspaces git repo: mao-family/knowledge (private), root at ~/.openclaw/workspaces/, auto commit+push to persist changes
 
 ## Recent Signals
 
