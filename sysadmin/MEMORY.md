@@ -4,10 +4,12 @@
 
 - **[PENDING-2026-03-09 00:00 CST]** feishu duplicate plugin warning 修复：`openclaw config unset plugins.entries.feishu` 已执行（2026-03-09 13:08 CST），需在今晚午夜执行 `openclaw gateway restart` 使其生效。已确认可安全重启（plugins.installs.feishu 已是默认 enabled，无需 entries 显式声明）。
 
+## Settled Context
+
+- **2026-03-10** sysadmin HEARTBEAT.md 已清空（git sync 任务转移到 Maoku HEARTBEAT.md，由 main agent 每天 04:00 CST cron 触发）。MAOGEN 不再持有 heartbeat 定时任务。
+
 ## Durable Facts
 
-- CHANGELOG format: `- **YYYY-MM-DD HH:MM CST** — [ACTION] Description`
-- CHANGELOG actions: INSTALL, UNINSTALL, CONFIG, CREATE, DELETE, UPDATE, FIX
 - Hooks config must be at top-level hooks.internal.entries, NOT inside agents.list[]
 
 ## Recent Signals

@@ -1,6 +1,7 @@
 # Change Log
 
-Ops-style record of all software/skill installations and changes.
+Record of all significant operations: system changes, delegated tasks, key decisions, and important actions.
+Each entry includes the operator: [Maoku], [MAOGEN], or [Boss].
 
 ## Entries
 
@@ -18,6 +19,10 @@ Ops-style record of all software/skill installations and changes.
 - **2026-03-09 12:31 CST** — [UPDATE] Moved all skills from Maoku workspace to global (~/.openclaw/skills/): tavily-search, find-skills, skill-vetter, self-improving-agent, agent-browser. All 6 skills now available to all agents.
 - **2026-03-09 12:40 CST** — [CONFIG] Enabled cross-agent messaging: tools.sessions.visibility=all, tools.agentToAgent.enabled=true, tools.agentToAgent.allow=["main","sysadmin"]. Required for sessions_send between Maoku and MAOGEN.
 - **2026-03-09 12:48 CST** — [CREATE] Initialized .learnings/ directory in sysadmin workspace with ERRORS.md, LEARNINGS.md, FEATURE_REQUESTS.md for self-improving-agent skill.
+- **2026-03-10 01:18 CST** — [CREATE] LaunchAgent ai.openclaw.workspaces-sync: daily git sync of ~/.openclaw/workspaces to mao-family/knowledge at 04:00. Pull then push (bidirectional). Plist: ~/Library/LaunchAgents/ai.openclaw.workspaces-sync.plist. Log: /tmp/openclaw/workspaces-sync.log.
+- **2026-03-10 01:22 CST** — [DELETE] Removed LaunchAgent ai.openclaw.workspaces-sync. Replaced by MAOGEN heartbeat task. Daily git sync (pull+push) now managed via HEARTBEAT.md.
 - **2026-03-09 13:08 CST** — [CONFIG] Fixed MAOGEN model: agents.list[1].model.primary → github-copilot/claude-sonnet-4.6 (was incorrect claude-sonnet-4-5). Updated MAOGEN SOUL.md Rule #1 for direct execution.
 - **2026-03-09 16:30 CST** — [INSTALL] Azure CLI v2.84.0 via `brew install azure-cli`. For MS Teams Bot App Registration and Azure AD operations.
 - **2026-03-10 00:52 CST** — [INSTALL] RustDesk v1.4.6 via `brew install --cask rustdesk`. Remote desktop app (alternative to macOS Screen Sharing blocked by Intune MDM). Note: installed directly by Maoku agent, should have been delegated to MAOGEN.
+- **2026-03-10 09:28 CST** — [MAOGEN] [CREATE] Cron job `sysadmin-heartbeat-daily` (id: 917367d8). Schedule: `0 4 * * *` Asia/Shanghai (exact). Session: isolated, agent: sysadmin. Triggers HEARTBEAT.md daily tasks (git sync etc.). Next run: 2026-03-11 04:00 CST.
+- **2026-03-10 12:19 CST** — [MAOGEN] [DELETE] Removed cron job `sysadmin-heartbeat-daily` (917367d8). Git sync task moved to Maoku's HEARTBEAT.md; main agent cron to be configured by Maoku.

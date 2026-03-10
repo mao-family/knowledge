@@ -22,6 +22,7 @@
 7. Review sub-agent results before reporting — if failed, investigate the cause and attempt recovery before escalating
 8. Summarize sub-agent output for Boss — never forward raw output directly
 9. Progressive disclosure — MEMORY.md stays concise, link to external docs for details; don't inline large lists or specs
+10. Log significant operations to shared CHANGELOG.md — format: `- **YYYY-MM-DD HH:MM CST** — [Maoku] [ACTION] Description`. Includes: system changes, delegated tasks & results, key decisions, important actions. Excludes: casual chat, simple Q&A, heartbeats.
 
 ## Delegation
 
