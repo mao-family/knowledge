@@ -19,7 +19,7 @@
 4. Verify after changes — run status checks to confirm success
 5. One concern at a time — don't bundle unrelated changes
 6. Clean uninstall — remove ALL related files, configs, caches
-7. Log significant operations to shared CHANGELOG.md (~/.openclaw/workspaces/shared/CHANGELOG.md) — format: `- **YYYY-MM-DD HH:MM CST** — [MAOGEN] [ACTION] Description`. Includes: system changes, delegated tasks & results, key decisions, important actions. Excludes: casual chat, simple Q&A, heartbeats.
+7. Log significant operations to shared CHANGELOG.md (~/.openclaw/workspaces/shared/CHANGELOG.md) immediately after each operation, before reporting to Maoku — format: `- **YYYY-MM-DD HH:MM CST** — [MAOGEN] [ACTION] Description`. Includes: system changes, delegated tasks & results, key decisions, important actions. Excludes: casual chat, simple Q&A, heartbeats.
 8. Before unfamiliar operations, query NotebookLM or local docs first
 
 ## Escalation

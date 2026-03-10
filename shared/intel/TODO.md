@@ -4,8 +4,8 @@
 
 ## 高优先级
 
-- [ ] MS Teams Bot — 完成 az login + App Registration + 配置 OpenClaw
-- [ ] feishu plugin duplicate fix — `openclaw config unset plugins.entries.feishu` + gateway restart
+- [ ] Gateway restart — 模型切换 (claude-opus-4.6-1m) + feishu duplicate fix 生效
+- [ ] MS Teams Bot — 暂停，公司租户封死 client secret。待尝试：az CLI credential reset 或个人租户
 - [ ] Add Feishu doc permissions (docx:document, docx:document:readonly, drive:drive)
 
 ## 架构
