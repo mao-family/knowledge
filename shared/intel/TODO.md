@@ -10,7 +10,7 @@
 
 ## 架构
 
-- [ ] 设计 PM Agent（agentId: pm）— 独立 agent 调度 Claude Code
+- [ ] 设计 Dev Agent（agentId: dev）— 项目经理 agent，调度 Claude Code 开发，读取 claude-me 项目配置
 - [ ] 统一知识库 — mao-family/knowledge (GitHub 私有 repo)
 - [ ] Knowledge Agent（agentId: knowledge）— 知识网关
 

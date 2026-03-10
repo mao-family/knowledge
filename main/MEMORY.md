@@ -29,3 +29,4 @@
 - Feishu image sending: file path must be under allowed directories (e.g. `~/.openclaw/media/`). `/tmp/` is NOT allowed — causes `LocalMediaAccessError`.
 - 核心文件改动必须先提方案等 Boss 批准，不能把需求描述当执行批准（2026-03-10 违规教训）
 - MAOGEN 不改 workspace 文件内容，所有文件修改由 Maoku 执行
+- 汇报文件改动时必须附上具体变更内容（before→after 或关键 diff），不能只列文件名

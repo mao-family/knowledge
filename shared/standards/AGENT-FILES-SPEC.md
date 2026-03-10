@@ -18,7 +18,7 @@ Best practices and format standards for OpenClaw agent configuration files.
 | MEMORY.md | Accumulated experience, active context, learned facts | Agent (self) | Frequently |
 | TOOLS.md | Environment info, available tools, config paths | Boss/Maoku | Occasionally |
 | USER.md | User profile, preferences, communication style | Boss/Maoku | Rarely |
-| CHANGELOG.md | Change records for system modifications | Agent (self) | Per change |
+| CHANGELOG.md | Records for git-untracked operations (software installs, openclaw.json config, cron jobs, external services) | Agent (self) | Per change |
 
 ## Core Principles
 
