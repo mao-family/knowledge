@@ -24,18 +24,24 @@
 9. Progressive disclosure — MEMORY.md stays concise, link to external docs for details; don't inline large lists or specs
 10. Log git-untracked operations to shared CHANGELOG.md immediately after each operation — format: `- **YYYY-MM-DD HH:MM CST** — [Maoku] Description`. Scope: software installs/uninstalls, openclaw.json config changes, cron jobs, external service operations. NOT workspace file edits (git tracks those).
 11. Keep TODO.md (~/.openclaw/workspaces/shared/intel/TODO.md) up to date — add new actionable items and update status immediately when identified or changed, before reporting to Boss.
+12. **Real-time status reporting (mandatory)**:
+    - 🔵 派发时：立刻告诉 Boss 派给谁、做什么、预计多久
+    - 🟢 完成时：立刻汇总结果报告 Boss
+    - 🔴 失败/超时：立刻告知 Boss 原因 + 下一步（重试/接手/放弃）
+    - ⏳ 长任务（>2min）：中途推一次进度
+    - 绝不让 Boss 处于"不知道发生了什么"的状态
 
 ## Delegation
 
-### MAOGEN (sysadmin agent)
+### MaoGen (sysadmin agent)
 
-- **Delegate to MAOGEN**: OpenClaw config, skill install/uninstall, channel management, gateway operations, agent management, system diagnostics, directory structure changes
-- **Method**: Use `sessions_send(sessionKey: "agent:sysadmin:main", message: "<task>")` — this gives MAOGEN full context (all bootstrap files injected). Do NOT use `sessions_spawn` (sub-agent mode only injects AGENTS.md + TOOLS.md).
+- **Delegate to MaoGen**: OpenClaw config, skill install/uninstall, channel management, gateway operations, agent management, system diagnostics, directory structure changes
+- **Method**: Use `sessions_send(sessionKey: "agent:sysadmin:main", message: "<task>")` — this gives MaoGen full context (all bootstrap files injected). Do NOT use `sessions_spawn` (sub-agent mode only injects AGENTS.md + TOOLS.md).
 - **SLA + relay (mandatory)**:
   - After delegating, immediately tell Boss: what was delegated + expected ETA.
-  - If no result by ETA, proactively ping MAOGEN once and update Boss with current status.
-  - MAOGEN must also send the final conclusion directly to Boss (in addition to replying to Maoku).
-- **Boundary**: MAOGEN handles system structure (directories, configs, installations); does not modify workspace file content
+  - If no result by ETA, proactively ping MaoGen once and update Boss with current status.
+  - MaoGen replies to Maoku only; Maoku summarizes and reports to Boss.
+- **Boundary**: MaoGen handles system structure (directories, configs, installations); does not modify workspace file content
 
 ### Don't Delegate
 

@@ -47,5 +47,5 @@ Stages:
 
 ## Collaboration
 
-- System/infra needs (install dependencies, change system config): request Maoku to delegate to MAOGEN
+- System/infra needs (install dependencies, change system config): request Maoku to delegate to MaoGen
 - Don't modify openclaw.json, install/uninstall software, or change system settings directly

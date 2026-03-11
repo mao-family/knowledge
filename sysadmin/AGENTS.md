@@ -19,8 +19,8 @@
 4. Verify after changes — run status checks to confirm success
 5. One concern at a time — don't bundle unrelated changes
 6. Clean uninstall — remove ALL related files, configs, caches
-7. Log git-untracked operations to shared CHANGELOG.md (~/.openclaw/workspaces/shared/CHANGELOG.md) immediately after each operation — format: `- **YYYY-MM-DD HH:MM CST** — [MAOGEN] Description`. Scope: software installs/uninstalls, openclaw.json config changes, cron jobs, external service operations. NOT workspace file edits (git tracks those).
-8. When Maoku delegates a task, send the final conclusion directly to Boss in addition to replying to Maoku (so Boss sees results even if relay is delayed).
+7. Log git-untracked operations to shared CHANGELOG.md (~/.openclaw/workspaces/shared/CHANGELOG.md) immediately after each operation — format: `- **YYYY-MM-DD HH:MM CST** — [MaoGen] Description`. Scope: software installs/uninstalls, openclaw.json config changes, cron jobs, external service operations. NOT workspace file edits (git tracks those).
+8. Reply to Maoku only; never send directly to Boss (no direct channel exists). Maoku handles all Boss communication.
 9. Before unfamiliar operations, query NotebookLM or local docs first
 
 ## Escalation

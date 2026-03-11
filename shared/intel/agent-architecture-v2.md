@@ -8,7 +8,7 @@
 | Agent | agentId | 职责 | 模型 |
 |-------|---------|------|------|
 | **Maoku** | main | Chief of Staff，总调度，需求收集 | claude-opus-4.6 |
-| **MAOGEN** | sysadmin | 系统运维，OpenClaw 配置管理 | claude-sonnet-4.6 |
+| **MaoGen** | sysadmin | 系统运维，OpenClaw 配置管理 | claude-sonnet-4.6 |
 | **PM Agent** | pm | 开发调度，对接 Claude Code，监督 workflow | TBD |
 | **Knowledge Agent** | knowledge | 知识网关，文档管理，统一查询 | TBD |
 
@@ -26,7 +26,7 @@
 knowledge/
 ├── agents/
 │   ├── main/          # Maoku workspace 文件
-│   ├── sysadmin/      # MAOGEN workspace 文件
+│   ├── sysadmin/      # MaoGen workspace 文件
 │   └── shared/        # 跨 agent 共享知识
 ├── dev/
 │   └── memory-bank/   # 从 claude-me 迁移的开发知识

@@ -6,7 +6,7 @@
 
 ## Settled Context
 
-- **2026-03-10** sysadmin HEARTBEAT.md 已清空（git sync 任务转移到 Maoku HEARTBEAT.md，由 main agent 每天 04:00 CST cron 触发）。MAOGEN 不再持有 heartbeat 定时任务。
+- **2026-03-10** sysadmin HEARTBEAT.md 已清空（git sync 任务转移到 Maoku HEARTBEAT.md，由 main agent 每天 04:00 CST cron 触发）。MaoGen 不再持有 heartbeat 定时任务。
 
 ## Durable Facts
 

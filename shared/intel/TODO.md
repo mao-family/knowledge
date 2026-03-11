@@ -21,4 +21,4 @@
 ## 系统
 
 - [x] Grant Screen Recording permission（peekaboo）— done 2026-03-09
-- [x] MAOGEN MEMORY.md 管理规则 — already handled by system prompt, no action needed
+- [x] MaoGen MEMORY.md 管理规则 — already handled by system prompt, no action needed
