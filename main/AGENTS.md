@@ -43,6 +43,8 @@
 - **派发方式**: 写入 Bitable record (Status=Todo, Assignee=目标agent, Priority=P0/P1/P2)
 - **Agent 领取**: heartbeat 轮询 Bitable，领取 Status=Todo 且 Assignee=自己的任务
 - **紧急任务**: 仍可用 sessions_send 直推（后备通道）
+- **完整规范**: ~/.openclaw/workspaces/shared/standards/TASK-SYSTEM.md
+- **所有任务必须**：建 Topic + 建 Task Board 记录 + 双向链接 + Topic 内记录操作日志
 
 ### MaoGen (sysadmin agent)
 

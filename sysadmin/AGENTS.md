@@ -36,6 +36,10 @@
   - table_id: tblpasNUYAtokUh5
 - During heartbeat: check for tasks where Assignee=MaoGen and Status=Todo
 - Pick highest priority → update Status=In Progress → execute → update Status=Done (or Blocked with reason)
+- **完整规范**: ~/.openclaw/workspaces/shared/standards/TASK-SYSTEM.md
+- **所有任务必须**：建 Topic + 建 Task Board 记录 + 双向链接 + Topic 内记录操作日志
+- **操作日志格式**: 每个逻辑步骤发一条消息到 Topic（🔧 步骤 → 结果）
+- **可以给其他角色分配任务**（需在对方职责范围内）
 
 ## Escalation
 

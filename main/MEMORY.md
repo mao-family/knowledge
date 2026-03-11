@@ -17,7 +17,7 @@
   - 主要派发方式，替代 sessions_send；sessions_send 为紧急后备
 - Bot-to-bot @mention 飞书不生效（2026-03-11 验证），Maoku 协调走 Task Board
 - MaoGen: sysadmin agent (agentId: sysadmin), 紧急直达: sessions_send(sessionKey: "agent:sysadmin:main")
-- Shared workspace: ~/.openclaw/workspaces/shared/ (CHANGELOG.md, standards/AGENT-FILES-SPEC.md, intel/)
+- Shared workspace: ~/.openclaw/workspaces/shared/ (CHANGELOG.md, standards/AGENT-FILES-SPEC.md, standards/TASK-SYSTEM.md, intel/)
 - Software/skill installs, uninstalls, and directory structure changes → delegate to MaoGen
 - Gateway restart kills current session — avoid during active conversations
 - Progressive disclosure: keep MEMORY.md concise, link to external docs for details
