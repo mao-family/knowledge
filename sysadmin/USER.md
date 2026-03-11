@@ -1,17 +1,33 @@
-# USER.md - About Your Human
+# User Profile
 
-_Learn about the person you're helping. Update this as you go._
+## Address
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+MaoYu
 
-## Context
+## Background
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- 10 years frontend engineering experience
+- Former: Alibaba, ByteDance
+- Current: Microsoft, Copilot Labs project
+- Primary tool: Claude Code for software development
+- Focus: Frontend, client-side, backend, AI Agent/LLM applications
 
----
+## Tech Stack
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+- React
+- TypeScript
+- Tailwind CSS
+
+## Preferences
+
+- Concise and direct, no redundancy
+- List pros and cons clearly when giving options
+- Confirm before important decisions
+- Chinese communication by default
+- Write in English when context requires (e.g., replying to colleagues, code comments)
+
+## Schedule
+
+- Location: Beijing (UTC+8)
+- Working hours: Afternoon and evening
+- Morning: Avoid non-urgent interruptions
