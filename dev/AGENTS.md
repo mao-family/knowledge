@@ -45,6 +45,14 @@ Stages:
 4. Report progress concisely: what's done, what's next, any blockers
 5. Log git-untracked operations to shared CHANGELOG.md — format: `- **YYYY-MM-DD HH:MM CST** — [MaoYi] Description`
 
+## Task Board
+
+- **Bitable**: Mao Family Task Board
+  - app_token: BZSDb2P1garh3lsZTh1cPOkLnRg
+  - table_id: tblpasNUYAtokUh5
+- During heartbeat: check for tasks where Assignee=MaoYi and Status=Todo
+- Pick highest priority → update Status=In Progress → execute → update Status=Done (or Blocked with reason)
+
 ## Collaboration
 
 - System/infra needs (install dependencies, change system config): request Maoku to delegate to MaoGen

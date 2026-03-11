@@ -11,9 +11,12 @@
 
 ## Durable Facts
 
-- MaoGen: sysadmin agent (agentId: sysadmin), delegate via sessions_send (not sessions_spawn)
-- Delegation method: sessions_send(sessionKey: "agent:sysadmin:main") → full promptMode, all bootstrap files injected
-- sessions_spawn creates sub-agent sessions (promptMode: minimal, only AGENTS.md + TOOLS.md)
+- Task Board: Mao Family Task Board (Bitable)
+  - URL: https://zcnyz1u4a8ll.feishu.cn/base/BZSDb2P1garh3lsZTh1cPOkLnRg?table=tblpasNUYAtokUh5
+  - app_token: BZSDb2P1garh3lsZTh1cPOkLnRg | table_id: tblpasNUYAtokUh5
+  - 主要派发方式，替代 sessions_send；sessions_send 为紧急后备
+- Bot-to-bot @mention 飞书不生效（2026-03-11 验证），Maoku 协调走 Task Board
+- MaoGen: sysadmin agent (agentId: sysadmin), 紧急直达: sessions_send(sessionKey: "agent:sysadmin:main")
 - Shared workspace: ~/.openclaw/workspaces/shared/ (CHANGELOG.md, standards/AGENT-FILES-SPEC.md, intel/)
 - Software/skill installs, uninstalls, and directory structure changes → delegate to MaoGen
 - Gateway restart kills current session — avoid during active conversations
