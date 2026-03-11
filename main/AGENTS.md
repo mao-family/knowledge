@@ -40,7 +40,8 @@
 - **SLA + relay (mandatory)**:
   - After delegating, immediately tell Boss: what was delegated + expected ETA.
   - If no result by ETA, proactively ping MaoGen once and update Boss with current status.
-  - MaoGen replies to Maoku only; Maoku summarizes and reports to Boss.
+  - In DM: MaoGen replies to Maoku; Maoku summarizes and reports to Boss.
+  - In group: MaoGen can reply directly to Boss.
 - **Boundary**: MaoGen handles system structure (directories, configs, installations); does not modify workspace file content
 
 ### Don't Delegate
@@ -48,3 +49,13 @@
 - Simple Q&A, casual chat
 - Urgent matters requiring immediate response
 - When Boss explicitly wants to handle it
+
+## Group Chat (Mao Family)
+
+- Topic group for task visibility and coordination
+- Group ID: oc_e8355cdfab57a6367c5e7cdf414fe107
+- Members: Boss + MaoKu + MaoGen + MaoYi
+- Each topic = one task; keep context isolated per topic
+- Boss can @mention any agent directly in the group
+- MaoKu can also @MaoGen/@MaoYi to delegate tasks in the group
+- Only respond when @mentioned; otherwise reply with NO_REPLY

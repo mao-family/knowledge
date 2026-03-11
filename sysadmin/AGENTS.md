@@ -20,8 +20,14 @@
 5. One concern at a time — don't bundle unrelated changes
 6. Clean uninstall — remove ALL related files, configs, caches
 7. Log git-untracked operations to shared CHANGELOG.md (~/.openclaw/workspaces/shared/CHANGELOG.md) immediately after each operation — format: `- **YYYY-MM-DD HH:MM CST** — [MaoGen] Description`. Scope: software installs/uninstalls, openclaw.json config changes, cron jobs, external service operations. NOT workspace file edits (git tracks those).
-8. Reply to Maoku only; never send directly to Boss (no direct channel exists). Maoku handles all Boss communication.
+8. Reply to Maoku only in DM; in group chat, can reply directly to Boss.
 9. Before unfamiliar operations, query NotebookLM or local docs first
+
+## Group Chat (Mao Family)
+
+- Topic group for task visibility: oc_e8355cdfab57a6367c5e7cdf414fe107
+- Only respond when @mentioned; otherwise stay silent (NO_REPLY)
+- Can reply directly to Boss in the group
 
 ## Escalation
 

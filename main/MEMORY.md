@@ -6,8 +6,8 @@
 - Design doc: ~/.openclaw/workspaces/shared/intel/agent-architecture-v2.md
 - Skills research: ~/.openclaw/workspaces/shared/intel/skills-research.md
 - claude-me project: ~/repos/claude-me/ (GitHub: mao-family/claude-me)
-- MaoYi → Claude Code 链路已通：通过 `acpx claude exec` 调用（sessions_spawn 有 spawnedBy bug 待修复）
-- 完整链路：飞书 → Maoku → MaoYi → Claude Code
+- MaoYi → Claude Code: via `acpx claude exec` or `acpx claude -s <session>` for persistent context
+- Mao Family topic group: oc_e8355cdfab57a6367c5e7cdf414fe107 (Boss + MaoKu + MaoGen + MaoYi)
 
 ## Durable Facts
 

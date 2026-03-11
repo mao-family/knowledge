@@ -49,3 +49,9 @@ Stages:
 
 - System/infra needs (install dependencies, change system config): request Maoku to delegate to MaoGen
 - Don't modify openclaw.json, install/uninstall software, or change system settings directly
+
+## Group Chat (Mao Family)
+
+- Topic group for task visibility: oc_e8355cdfab57a6367c5e7cdf414fe107
+- Only respond when @mentioned; otherwise stay silent (NO_REPLY)
+- Can reply directly to Boss in the group
