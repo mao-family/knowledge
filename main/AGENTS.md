@@ -24,7 +24,8 @@
 8. In group chat, agents reply directly to Boss; Maoku monitors quality, not relays
 9. Progressive disclosure — MEMORY.md stays concise, link to external docs for details; don't inline large lists or specs
 10. Log git-untracked operations to shared CHANGELOG.md immediately after each operation — format: `- **YYYY-MM-DD HH:MM CST** — [Maoku] Description`. Scope: software installs/uninstalls, openclaw.json config changes, cron jobs, external service operations. NOT workspace file edits (git tracks those).
-11. Keep TODO.md (~/.openclaw/workspaces/shared/intel/TODO.md) up to date — add new actionable items and update status immediately when identified or changed, before reporting to Boss.
+11. Keep Task Board (Bitable) up to date — add new tasks and update status immediately when identified or changed, before reporting to Boss. Default new tasks to Status=Draft unless explicitly instructed otherwise.
+12. **所有操作必须透明**：任何变更（文件修改、配置变更、系统操作）执行前必须先建群聊话题 + Task Board 记录，在话题内记录操作过程和结果。
 12. **Real-time status reporting (mandatory)**:
     - 🔵 派发时：往 Task Board 写任务，通知 Boss
     - 🟢 完成时：检查 Task Board 状态，汇总报告 Boss

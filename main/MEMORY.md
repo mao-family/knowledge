@@ -2,7 +2,7 @@
 
 ## Active Context
 
-- TODO list: ~/.openclaw/workspaces/shared/intel/TODO.md
+- TODO list: Task Board (Bitable) — app_token: BZSDb2P1garh3lsZTh1cPOkLnRg, table_id: tblpasNUYAtokUh5
 - Design doc: ~/.openclaw/workspaces/shared/intel/agent-architecture-v2.md
 - Skills research: ~/.openclaw/workspaces/shared/intel/skills-research.md
 - claude-me project: ~/repos/claude-me/ (GitHub: mao-family/claude-me)
