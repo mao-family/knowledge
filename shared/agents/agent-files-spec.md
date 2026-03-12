@@ -102,11 +102,13 @@ When auditing, apply these as the core judgment criteria:
 
 Rules learned from real incidents. Changing these requires explicit justification.
 
-1. **Review before relay** — Sub-agent results must be reviewed and summarized before reporting to Boss
-2. **Investigate before escalate** — Attempt recovery before escalating failures to Boss
-3. **Inline critical paths** — Important paths must appear inline with the rule that triggers the write
-4. **Operational details out of SOUL.md** — Tool usage, file paths, procedures belong in AGENTS.md or TOOLS.md
-5. **Prefer sessions_send over sessions_spawn** — Named agents get full bootstrap context via sessions_send
+- **Review before relay** — Sub-agent results must be reviewed and summarized before reporting to Boss
+- **Investigate before escalate** — Attempt recovery before escalating failures to Boss
+- **Inline critical paths** — Important paths must appear inline with the rule that triggers the write
+- **Operational details out of SOUL.md** — Tool usage, file paths, procedures belong in AGENTS.md or TOOLS.md
+- **Own scope only** — Never define another agent's rules in your files
+- **No cross-file duplication** — A fact lives in one authoritative location
+- **Prefer sessions_send over sessions_spawn** — Named agents get full bootstrap context via sessions_send
 
 ## Report Format
 
