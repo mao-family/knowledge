@@ -107,7 +107,6 @@ Rules learned from real incidents. Changing these requires explicit justificatio
 - **Inline critical paths** — Important paths must appear inline with the rule that triggers the write
 - **Own scope only** — Never define another agent's rules in your files
 - **No cross-file duplication** — A fact lives in one authoritative location
-- **Prefer sessions_send over sessions_spawn** — Named agents get full bootstrap context via sessions_send
 
 ## Report Format
 
