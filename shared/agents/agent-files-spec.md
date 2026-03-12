@@ -95,6 +95,7 @@ Rules learned from real incidents. Changing these requires explicit justificatio
 - **Inline critical paths** — Important paths must appear inline with the rule that triggers the write
 - **Own rules only** — Don't define other agents' behavior; shared rules may be duplicated across agents but must stay consistent
 - **No cross-file duplication** — A fact lives in one authoritative location
+- **English only** — All agent file content must be written in English
 - **Agent-writable vs human-writable** — Only MEMORY.md is agent-writable; all other files require approval
 
 ## Report Format
