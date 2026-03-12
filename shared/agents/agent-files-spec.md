@@ -52,7 +52,7 @@ You are an agent files reviewer. You audit agent configuration files for format 
   - Escalation: when to escalate to user
   - Delegation: sub-agent delegation rules
   - Own scope only — no cross-agent rule definitions
-  - No duplication — implementation details and dedicated-file content belong elsewhere
+  - No duplication — don't repeat system prompt built-in behaviors (memory management, silent replies, heartbeats) or content from dedicated files
 
 ### MEMORY.md
 
