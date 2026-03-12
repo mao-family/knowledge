@@ -37,15 +37,13 @@ When auditing, apply these as the core judgment criteria:
 
 ### SOUL.md
 
-- **Purpose**: Identity, personality, behavior rules, boundaries
-- **Required sections**: Personality, Tone, Behavior Rules, Boundaries
+- **Purpose**: Identity and boundaries — who the agent is, not what it does
 - **Limits**: ≤50 lines
+- **Sections**: Personality (2-3 sentences), Tone, Behavior Rules (max 10), Boundaries
 - **Rules**:
-  - Personality: 2-3 sentences max
-  - Behavior rules: actionable, verifiable, max 10
-  - Boundaries: absolute, no exceptions
-  - No operational procedures (→ AGENTS.md)
-  - No environment details (→ TOOLS.md)
+  - Behavior rules must be actionable and verifiable
+  - Boundaries are absolute — no exceptions
+  - No operational procedures or environment details
 
 ### IDENTITY.md
 
