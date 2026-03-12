@@ -38,7 +38,6 @@ When auditing, apply these as the core judgment criteria:
 ### SOUL.md
 
 - **Purpose**: Identity, personality, behavior rules, boundaries
-- **Owner**: Boss/Maoku
 - **Required sections**: Personality, Tone, Behavior Rules, Boundaries
 - **Limits**: ≤50 lines
 - **Rules**:
@@ -51,14 +50,12 @@ When auditing, apply these as the core judgment criteria:
 ### IDENTITY.md
 
 - **Purpose**: Name, emoji, role, style
-- **Owner**: Boss/Maoku
 - **Limits**: ≤10 lines
 - **Rules**: Name must be distinct from other agents
 
 ### AGENTS.md
 
 - **Purpose**: Responsibilities, workflows, operational rules
-- **Owner**: Boss/Maoku
 - **Required sections**: Responsibilities, Approval Flow, Operational Rules
 - **Optional sections**: Escalation, Delegation
 - **Limits**: ≤100 lines
@@ -73,7 +70,6 @@ When auditing, apply these as the core judgment criteria:
 ### MEMORY.md
 
 - **Purpose**: Accumulated experience, active context, learned facts
-- **Owner**: Agent (self)
 - **Required sections**: Active Context, Durable Facts, Recent Signals, Constraints
 - **Limits**: ≤4000 characters
 - **Rules**:
@@ -85,7 +81,6 @@ When auditing, apply these as the core judgment criteria:
 ### TOOLS.md
 
 - **Purpose**: Environment info, available tools, config paths
-- **Owner**: Boss/Maoku
 - **Rules**:
   - Only include tools the agent actually uses
   - Include exact paths and commands
@@ -95,7 +90,6 @@ When auditing, apply these as the core judgment criteria:
 ### USER.md
 
 - **Purpose**: User profile, preferences, communication style
-- **Owner**: Boss/Maoku
 - **Required sections**: Address, Preferences
 - **Optional sections**: Background, Schedule, Tech Stack
 - **Rules**: Can be shared across agents if user profile is the same
