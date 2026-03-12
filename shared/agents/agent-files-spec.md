@@ -93,7 +93,7 @@ Rules learned from real incidents. Changing these requires explicit justificatio
 - **Review before relay** — Sub-agent results must be reviewed and summarized before reporting
 - **Investigate before escalate** — Attempt recovery before escalating failures
 - **Inline critical paths** — Important paths must appear inline with the rule that triggers the write
-- **Own scope only** — Never define another agent's rules in your files
+- **Own rules only** — Don't define other agents' behavior; shared rules may be duplicated across agents but must stay consistent
 - **No cross-file duplication** — A fact lives in one authoritative location
 - **Agent-writable vs human-writable** — Only MEMORY.md is agent-writable; all other files require approval
 
