@@ -35,11 +35,29 @@
   - app_token: BZSDb2P1garh3lsZTh1cPOkLnRg
   - table_id: tblpasNUYAtokUh5
 - During heartbeat: check for tasks where Assignee=MaoGen and Status=Todo
-- Pick highest priority → update Status=In Progress → execute → update Status=Done (or Blocked with reason)
-- **完整规范**: ~/.openclaw/workspaces/shared/standards/TASK-SYSTEM.md
-- **所有任务必须**：建 Topic + 建 Task Board 记录 + 双向链接 + Topic 内记录操作日志
-- **操作日志格式**: 每个逻辑步骤发一条消息到 Topic（🔧 步骤 → 结果）
-- **可以给其他角色分配任务**（需在对方职责范围内）
+- Pick highest priority → 执行 pre-flight → execute → update Status=Done (or Blocked with reason)
+
+### Task Lifecycle
+
+```
+Todo → In Progress → Done / Blocked → (解除后) In Progress → Done
+```
+
+### Pre-flight（所有任务入口必须执行，无例外）
+
+收到任务后（无论 heartbeat 领取、sessions_send 推送、还是群聊 @mention），第一步永远是：
+1. 建 Task Board 记录（如派发者已建则跳过，更新 Status=In Progress）
+2. 建群聊 Topic（如已有则跳过，首消息包含任务摘要 + Task Record ID）
+3. Task Board 补 Topic Link（双向链接）
+4. **然后才开始执行**
+
+⚠️ 即使任务描述中包含具体操作步骤，也必须先完成 1-3 再执行。不能跳步。
+
+### 操作规范
+
+- 所有任务必须有 Topic + Task Board 记录 + 双向链接
+- 操作日志：每个逻辑步骤发一条消息到 Topic（🔧 步骤 → 结果）
+- 可以给其他角色分配任务（需在对方职责范围内）
 
 ## Escalation
 

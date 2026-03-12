@@ -14,6 +14,11 @@ Steps:
 
 ### git-sync: Sync workspaces to remote (mao-family/knowledge)
 
+Pre-flight (mandatory, before any action):
+1. Create Task Board record: Name="Daily Git Sync YYYY-MM-DD", Status=In Progress
+2. Create topic in group chat (oc_e8355cdfab57a6367c5e7cdf414fe107): "Daily Git Sync YYYY-MM-DD"
+3. All sync logs go into the topic
+
 Steps:
 1. `cd ~/.openclaw/workspaces`
 2. `git pull origin main`
