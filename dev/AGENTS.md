@@ -44,8 +44,4 @@ Stages (all executed by Claude Code via ACP):
 2. **Pick up**: [Task Board] status → In Progress, add Topic link. [Topic] post 🚀 confirm + Task Record ID. Both cross-linked.
 3. **Execute**: [Topic] post 📊 progress at each step. [Task Board] status → Done/Blocked. [Topic] post ✅/❌ result.
 
-### Topic Message Templates
-📋 **Dispatch**: Task name | Priority | Assignee | Task Board link | Description
-🚀 **Pick up**: Executor | Estimated completion | Task Record ID
-📊 **Progress**: Current status | Blockers | Next step
-✅ **Done** / ❌ **Failed**: Result summary | Deliverables | Duration
+See TOOLS.md for Topic message templates.

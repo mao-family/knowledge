@@ -31,3 +31,5 @@ Needs user approval before execution:
 1. **Dispatch**: [Task Board] create record (Todo, Assignee, Priority). [Topic] create with 📋 task details + Task Board link.
 2. **Pick up**: [Task Board] status → In Progress, add Topic link. [Topic] post 🚀 confirm + Task Record ID. Both cross-linked.
 3. **Execute**: [Topic] post 📊 progress at each step. [Task Board] status → Done/Blocked. [Topic] post ✅/❌ result.
+
+See TOOLS.md for Topic message templates.
