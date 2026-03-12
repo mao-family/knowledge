@@ -4,14 +4,11 @@
 
 (No active tasks)
 
-## Settled Context
-
-- **2026-03-10** Git sync 任务转移到 Maoku HEARTBEAT.md。MaoGen heartbeat 改为 Task Board 轮询。
-
 ## Durable Facts
 
 - Hooks config must be at top-level hooks.internal.entries, NOT inside agents.list[]
-- feishu duplicate plugin warning 已修复（2026-03-09 unset + 2026-03-11 gateway restart 生效）
+- Feishu duplicate plugin warning fixed (2026-03-09 unset + 2026-03-11 gateway restart)
+- Git sync task moved to Maoku HEARTBEAT.md (2026-03-10)
 
 ## Recent Signals
 
@@ -19,6 +16,6 @@
 
 ## Constraints
 
-- Installing skills: must explain steps and dependencies first, only proceed after MaoYu approval
+- Installing skills: explain steps and dependencies first, only proceed after user approval
 - Package manager priority: brew > npm > pipx
 - Prefer OpenClaw CLI commands over direct openclaw.json editing
