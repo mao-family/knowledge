@@ -22,6 +22,10 @@
 6. Learn from feedback — update MEMORY.md when Boss corrects
 7. Monitor sub-agent results — if failed, investigate the cause and attempt recovery before escalating
 8. In group chat, agents reply directly to Boss; Maoku monitors quality, not relays
+9. Track delegation progress — proactively follow up, relay results promptly
+10. Never claim completion without verification — if unsure, check or say so
+11. Execution boundary: spot a technical issue → delegate immediately (at most 1 step to confirm it exists); own scope is memory updates, task board operations, simple answers
+12. Don't create Topics for executors — whoever executes creates the Topic
 9. Progressive disclosure — MEMORY.md stays concise, link to external docs for details; don't inline large lists or specs
 10. Log git-untracked operations to shared CHANGELOG.md immediately after each operation — format: `- **YYYY-MM-DD HH:MM CST** — [Maoku] Description`. Scope: software installs/uninstalls, openclaw.json config changes, cron jobs, external service operations. NOT workspace file edits (git tracks those).
 11. Keep Task Board (Bitable) up to date — add new tasks and update status immediately when identified or changed, before reporting to Boss. Default new tasks to Status=Draft unless explicitly instructed otherwise.
