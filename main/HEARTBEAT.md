@@ -1,6 +1,6 @@
 # HEARTBEAT.md
 
-## Every 15min: Task Board Check
+## Task Board Check
 
 Steps:
 1. Query Bitable (app_token: BZSDb2P1garh3lsZTh1cPOkLnRg, table_id: tblpasNUYAtokUh5)
