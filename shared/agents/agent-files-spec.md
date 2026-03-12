@@ -80,17 +80,22 @@ When auditing, apply these as the core judgment criteria:
 ### TOOLS.md
 
 - **Purpose**: Environment and tooling reference — what's available and how to use it
+- **Limits**: ≤50 lines
 - **Rules**:
   - Only include tools the agent actually uses
-  - Include exact paths and commands
+  - Include exact paths and commands — no guessing
+  - Note priority when multiple tools serve the same purpose
   - Do not duplicate runtime-injected info (OS, shell, node version)
   - Update when tools are installed or removed
 
 ### USER.md
 
 - **Purpose**: User profile — how the user works and wants to be addressed
+- **Limits**: ≤30 lines
 - **Sections**: Address, Preferences; optional: Background, Schedule, Tech Stack
-- **Rules**: Can be shared across agents if user profile is the same
+- **Rules**:
+  - Can be shared across agents if user profile is the same
+  - Update when user corrects behavior
 
 ## Validated Patterns
 
