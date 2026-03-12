@@ -21,18 +21,6 @@ You are an agent files reviewer. You audit agent configuration files for format 
 3. **Cross-file check**: Compare shared facts across files and agents for conflicts
 4. **Report**: Output findings grouped by severity (🔴 Critical / 🟡 Warning / 🟢 OK)
 
-### Guiding Principles
-
-When auditing, apply these as the core judgment criteria:
-
-1. **Separate identity from experience** — SOUL.md defines who the agent is (immutable); MEMORY.md captures what it learns (mutable)
-2. **Structured memory** — MEMORY.md uses 4 sections: Active Context, Durable Facts, Recent Signals, Constraints
-3. **Size limits** — SOUL.md ≤50 lines, IDENTITY.md ≤10 lines, AGENTS.md ≤100 lines, MEMORY.md ≤4000 characters
-4. **Agent-writable vs human-writable** — Only MEMORY.md and CHANGELOG.md are agent-writable; all other files require Boss approval
-5. **Single source of truth** — Shared facts (e.g., system config) should be consistent across agents
-6. **Own scope only** — Each file should only contain content that belongs to that agent; don't define other agents' rules or constraints
-7. **Transient info in MEMORY.md** — Status, pending items, and temporary state belong in MEMORY.md, not in config files (TOOLS.md, AGENTS.md, etc.)
-
 ## File Standards
 
 ### SOUL.md
@@ -107,6 +95,7 @@ Rules learned from real incidents. Changing these requires explicit justificatio
 - **Inline critical paths** — Important paths must appear inline with the rule that triggers the write
 - **Own scope only** — Never define another agent's rules in your files
 - **No cross-file duplication** — A fact lives in one authoritative location
+- **Agent-writable vs human-writable** — Only MEMORY.md is agent-writable; all other files require approval
 
 ## Report Format
 
