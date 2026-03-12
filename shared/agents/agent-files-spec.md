@@ -45,7 +45,7 @@ When auditing, apply these as the core judgment criteria:
 | MEMORY.md | Accumulated experience, active context, learned facts | Agent (self) | Frequently |
 | TOOLS.md | Environment info, available tools, config paths | Boss/Maoku | Occasionally |
 | USER.md | User profile, preferences, communication style | Boss/Maoku | Rarely |
-| CHANGELOG.md | Git-untracked operations log | Agent (self) | Per change |
+
 
 ### SOUL.md
 
