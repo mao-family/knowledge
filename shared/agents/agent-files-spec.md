@@ -72,10 +72,11 @@ When auditing, apply these as the core judgment criteria:
 - **Limits**: ≤4000 characters
 - **Sections**: Active Context, Durable Facts, Recent Signals, Constraints
 - **Rules**:
+  - Active Context: current tasks, ongoing work; clear when tasks complete
+  - Durable Facts: stable facts (versions, paths, configs); verify periodically, remove stale entries
+  - Recent Signals: recent observations, patterns, temporary notes; compress into durable facts or discard
+  - Constraints: learned rules from experience
   - Agent manages this file autonomously
-  - Clear Active Context when tasks complete
-  - Periodically distill: compress old signals into durable facts or discard
-  - Verify durable facts periodically, remove stale entries
 
 ### TOOLS.md
 
