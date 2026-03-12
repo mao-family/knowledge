@@ -39,10 +39,11 @@ When auditing, apply these as the core judgment criteria:
 
 - **Purpose**: Identity and boundaries — who the agent is, not what it does
 - **Limits**: ≤50 lines
-- **Sections**: Personality (2-3 sentences), Tone, Behavior Rules (max 10), Boundaries
+- **Sections**: Personality (2-3 sentences), Tone (3-5 bullets), Behavior Rules (max 10), Boundaries
 - **Rules**:
-  - Behavior rules must be actionable and verifiable
-  - Boundaries are absolute — no exceptions
+  - Tone: only "how to say", not "what to do"
+  - Behavior Rules: must be actionable and verifiable
+  - Boundaries: absolute, use "never"/"must not"
   - No operational procedures or environment details
 
 ### IDENTITY.md
