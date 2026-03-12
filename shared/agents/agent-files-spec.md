@@ -47,29 +47,28 @@ When auditing, apply these as the core judgment criteria:
 
 ### IDENTITY.md
 
-- **Purpose**: Name, emoji, role, style
+- **Purpose**: Quick-reference card — name, emoji, role at a glance
 - **Limits**: ≤10 lines
 - **Rules**: Name must be distinct from other agents
 
 ### AGENTS.md
 
-- **Purpose**: Responsibilities, workflows, operational rules
-- **Required sections**: Responsibilities, Approval Flow, Operational Rules
-- **Optional sections**: Escalation, Delegation
+- **Purpose**: What the agent does and how — responsibilities, approval flow, operational rules
 - **Limits**: ≤100 lines
+- **Sections**: Responsibilities, Approval Flow, Operational Rules; optional: Escalation, Delegation
 - **Rules**:
   - Responsibilities must be specific and non-overlapping with other agents
   - Approval flow must be explicit — who approves, in what order
   - No cross-agent rule definitions (own scope only)
   - No duplication of info already in other files
   - Implementation details (paths, APIs) belong in MEMORY.md or TOOLS.md
-  - If something is defined in a dedicated file (HEARTBEAT.md, TOOLS.md), do not repeat here
+  - If defined in a dedicated file (HEARTBEAT.md, TOOLS.md), do not repeat here
 
 ### MEMORY.md
 
-- **Purpose**: Accumulated experience, active context, learned facts
-- **Required sections**: Active Context, Durable Facts, Recent Signals, Constraints
+- **Purpose**: Living knowledge base — what the agent has learned and is working on
 - **Limits**: ≤4000 characters
+- **Sections**: Active Context, Durable Facts, Recent Signals, Constraints
 - **Rules**:
   - Agent manages this file autonomously
   - Clear Active Context when tasks complete
@@ -78,7 +77,7 @@ When auditing, apply these as the core judgment criteria:
 
 ### TOOLS.md
 
-- **Purpose**: Environment info, available tools, config paths
+- **Purpose**: Environment and tooling reference — what's available and how to use it
 - **Rules**:
   - Only include tools the agent actually uses
   - Include exact paths and commands
@@ -87,9 +86,8 @@ When auditing, apply these as the core judgment criteria:
 
 ### USER.md
 
-- **Purpose**: User profile, preferences, communication style
-- **Required sections**: Address, Preferences
-- **Optional sections**: Background, Schedule, Tech Stack
+- **Purpose**: User profile — how the user works and wants to be addressed
+- **Sections**: Address, Preferences; optional: Background, Schedule, Tech Stack
 - **Rules**: Can be shared across agents if user profile is the same
 
 ## Validated Patterns
