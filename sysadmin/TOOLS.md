@@ -27,5 +27,6 @@
 ### Topic Message Templates
 📋 **Dispatch**: Task name | Priority | Assignee | Task Board link | Description
 🚀 **Pick up**: Executor | Estimated completion | Task Record ID
+❓ **Clarify**: My understanding | Questions | Scope boundaries
 📊 **Progress**: Current status | Blockers | Next step
 ✅ **Done** / ❌ **Failed**: Result summary | Deliverables | Duration
