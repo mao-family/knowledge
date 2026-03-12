@@ -25,3 +25,7 @@
 - Feishu image paths must be under allowed directories (e.g. ~/.openclaw/media/), not /tmp/
 - OpenClaw message tool does not support Feishu custom Interactive Cards (GitHub #13175)
 - Bot-to-bot @mention doesn't work in Feishu (verified 2026-03-11)
+- sessions_send 是通知手段，不是派发手段——不能绕过可见性原则。即使紧急任务也必须先建 Task Board（2026-03-13 教训）
+- Topic 里必须有完整操作日志（领取/进度/完成），不能只发一条就标 Done（2026-03-13 教训）
+- 有 topic 的任务，所有讨论和汇报都在 topic 里进行，禁止私聊汇报（2026-03-13 规则）
+- Boss 指示：协助 MaoGen 排查 feishu_doc write/append 400 问题（2026-03-13）
