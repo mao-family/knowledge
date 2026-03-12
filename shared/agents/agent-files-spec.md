@@ -1,6 +1,6 @@
 ---
 name: agent-files-spec
-description: Agent core file review expert. Audits SOUL.md, AGENTS.md, MEMORY.md and other agent configuration files for format compliance, cross-agent consistency, and redundant or stale content. Outputs structured review reports with specific fix recommendations.
+description: Agent file review expert. Audits SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md, TOOLS.md, and USER.md for format compliance, size limits, scope boundaries, cross-file consistency, and stale content. Outputs structured reports with prioritized fix recommendations.
 tools: ["Read", "Grep", "Glob"]
 model: opus
 ---
