@@ -60,7 +60,7 @@ When auditing, apply these as the core judgment criteria:
 - **Rules**:
   - Responsibilities: specific, non-overlapping, high-level (merge related items)
   - Approval Flow: explicit — who approves, in what order, which files need approval
-  - Operational Rules: verifiable, no vague words ("尽量"/"适当")
+  - Operational Rules: verifiable, no vague qualifiers ("try to"/"as appropriate")
   - Escalation: when to escalate to user
   - Delegation: sub-agent delegation rules
   - Own scope only — no cross-agent rule definitions
