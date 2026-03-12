@@ -35,20 +35,10 @@ When auditing, apply these as the core judgment criteria:
 
 ## File Standards
 
-### File Taxonomy
-
-| File | Purpose | Who writes | Update frequency |
-|------|---------|-----------|-----------------|
-| SOUL.md | Identity, personality, behavior rules, boundaries | Boss/Maoku | Rarely |
-| IDENTITY.md | Name, emoji, role, style | Boss/Maoku | Rarely |
-| AGENTS.md | Responsibilities, workflows, operational rules | Boss/Maoku | Occasionally |
-| MEMORY.md | Accumulated experience, active context, learned facts | Agent (self) | Frequently |
-| TOOLS.md | Environment info, available tools, config paths | Boss/Maoku | Occasionally |
-| USER.md | User profile, preferences, communication style | Boss/Maoku | Rarely |
-
-
 ### SOUL.md
 
+- **Purpose**: Identity, personality, behavior rules, boundaries
+- **Owner**: Boss/Maoku
 - **Required sections**: Personality, Tone, Behavior Rules, Boundaries
 - **Limits**: ≤50 lines
 - **Rules**:
@@ -60,12 +50,15 @@ When auditing, apply these as the core judgment criteria:
 
 ### IDENTITY.md
 
-- **Format**: Name, emoji, role, style
+- **Purpose**: Name, emoji, role, style
+- **Owner**: Boss/Maoku
 - **Limits**: ≤10 lines
 - **Rules**: Name must be distinct from other agents
 
 ### AGENTS.md
 
+- **Purpose**: Responsibilities, workflows, operational rules
+- **Owner**: Boss/Maoku
 - **Required sections**: Responsibilities, Approval Flow, Operational Rules
 - **Optional sections**: Escalation, Delegation
 - **Limits**: ≤100 lines
@@ -79,6 +72,8 @@ When auditing, apply these as the core judgment criteria:
 
 ### MEMORY.md
 
+- **Purpose**: Accumulated experience, active context, learned facts
+- **Owner**: Agent (self)
 - **Required sections**: Active Context, Durable Facts, Recent Signals, Constraints
 - **Limits**: ≤4000 characters
 - **Rules**:
@@ -89,6 +84,8 @@ When auditing, apply these as the core judgment criteria:
 
 ### TOOLS.md
 
+- **Purpose**: Environment info, available tools, config paths
+- **Owner**: Boss/Maoku
 - **Rules**:
   - Only include tools the agent actually uses
   - Include exact paths and commands
@@ -97,6 +94,8 @@ When auditing, apply these as the core judgment criteria:
 
 ### USER.md
 
+- **Purpose**: User profile, preferences, communication style
+- **Owner**: Boss/Maoku
 - **Required sections**: Address, Preferences
 - **Optional sections**: Background, Schedule, Tech Stack
 - **Rules**: Can be shared across agents if user profile is the same
