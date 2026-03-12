@@ -58,12 +58,13 @@ When auditing, apply these as the core judgment criteria:
 - **Limits**: ≤100 lines
 - **Sections**: Responsibilities, Approval Flow, Operational Rules; optional: Escalation, Delegation
 - **Rules**:
-  - Responsibilities must be specific and non-overlapping with other agents
-  - Approval flow must be explicit — who approves, in what order
-  - No cross-agent rule definitions (own scope only)
-  - No duplication of info already in other files
-  - Implementation details (paths, APIs) belong in MEMORY.md or TOOLS.md
-  - If defined in a dedicated file (HEARTBEAT.md, TOOLS.md), do not repeat here
+  - Responsibilities: specific, non-overlapping, high-level (merge related items)
+  - Approval Flow: explicit — who approves, in what order, which files need approval
+  - Operational Rules: verifiable, no vague words ("尽量"/"适当")
+  - Escalation: when to escalate to user
+  - Delegation: sub-agent delegation rules
+  - Own scope only — no cross-agent rule definitions
+  - No duplication — implementation details and dedicated-file content belong elsewhere
 
 ### MEMORY.md
 
