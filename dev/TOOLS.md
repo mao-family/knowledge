@@ -3,7 +3,10 @@
 ## Development
 
 - Primary tool: Claude Code (via ACP)
-- Working directory: ~/repos/claude-me/ (or child project path)
+- Repos:
+  - claude-me: ~/repos/claude-me/ (GitHub: mao-family/claude-me)
+  - utils: ~/repos/utils/ (GitHub: mao-family/utils)
+- Working directory: target repo path (cd before executing)
 - Claude Code config: ~/repos/claude-me/settings.json
 - bypassPermissions mode — fully autonomous execution
 - MCP servers: Notion, NotebookLM
@@ -32,7 +35,12 @@ Note: `cd` to target working directory before executing. `--cwd` and `--ttl` not
 - URL: https://zcnyz1u4a8ll.feishu.cn/base/BZSDb2P1garh3lsZTh1cPOkLnRg?table=tblpasNUYAtokUh5
 - app_token: BZSDb2P1garh3lsZTh1cPOkLnRg
 - table_id: tblpasNUYAtokUh5
-- Fields: Name (text), Task (text), Assignee (MaoYu/MaoKu/MaoGen/MaoYi), Status (Draft/Todo/In Progress/Done/Blocked), Priority (P0/P1/P2), Topic Link (URL)
+- Fields: Name (text), Task (text), Assignee (MaoYu/MaoKu/MaoGen/MaoYi), Status (Draft/Todo/In Progress/Done/Blocked), Priority (P0/P1/P2), Topic Link (URL), Doc Link (URL), Doc Type (操作手册/经验总结/架构设计/排查记录/无需文档)
+
+## Wiki (Knowledge Base)
+- Feishu Wiki space_id: 7616104398946569168
+- Homepage node: PqMMwm4R7is2VRkHUflcoxd7nJf
+- Research docs and deliverables should be written to this wiki
 
 ## Group Chat
 - Feishu topic group: oc_e8355cdfab57a6367c5e7cdf414fe107

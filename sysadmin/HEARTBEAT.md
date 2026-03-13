@@ -22,6 +22,7 @@ Check all In Progress tasks (all assignees) for compliance:
 1. **Topic exists?** — Task Board record must have Topic Link filled
 2. **Topic has activity?** — Check assignee's recent session history for progress updates
 3. **No private chat leaks?** — Progress should be in Topic, not DM
+4. **Doc check (Done tasks)** — Status=Done 的记录必须有 Doc Type；Doc Type 非"无需文档"时 Doc Link 必填。违规则 reopen 并提醒。
 
 If violations found:
 - Post a reminder in group chat @ the assignee
