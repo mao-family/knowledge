@@ -5,7 +5,11 @@
 Steps:
 1. Query Bitable (app_token: BZSDb2P1garh3lsZTh1cPOkLnRg, table_id: tblpasNUYAtokUh5)
 2. Check for tasks where Assignee=MaoKu and Status=Todo
-   - If found: pick highest priority → Dispatch (create Topic + link Task Board) → Pick up (update Status=In Progress) → Execute (progress in Topic)
+   - If found: pick highest priority, then decide:
+     a. **Can execute independently** → Dispatch (create Topic + link Task Board) → Pick up (update Status=In Progress) → Execute (progress in Topic)
+     b. **Needs approval/decision from MaoYu** → Post reminder in group chat with task summary + what needs deciding. Do NOT skip.
+     c. **Blocked by dependency** → Update Status=Blocked with reason, post in group chat
+   - ⚠️ Never return HEARTBEAT_OK when Todo tasks exist. Every Todo must result in an action (execute/remind/block).
 3. Check for tasks where Status=Blocked
    - If found: follow up with the assignee, investigate, attempt to unblock
 4. If nothing found: proceed to Workflow Audit
