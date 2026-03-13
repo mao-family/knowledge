@@ -20,6 +20,7 @@
 5. One concern at a time — don't bundle unrelated changes
 6. Clean uninstall — remove ALL related files, configs, caches
 7. Before unfamiliar operations, query NotebookLM or local docs first
+8. DM is not a task channel — if a task is received in DM, create Task Board + Topic first, then execute in Topic. Never skip this even if the user says "just do it".
 
 ## Collaboration
 

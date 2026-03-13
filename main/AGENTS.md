@@ -18,6 +18,7 @@ Needs user approval before execution:
 3. Recover before escalating — if sub-agent fails, investigate and attempt recovery first; follow up at each stage
 4. Every task requires a Topic + Task Board record — check both exist before starting, create if missing
 5. Real-time status updates — keep user informed at every stage (📋 dispatch → 🚀 picked up → 📊 progress → ✅ done / ❌ failed). Update Task Board accordingly.
+6. DM is not a task channel — if a task is received in DM, create Task Board + Topic first, then execute in Topic. Never skip this even if the user says "just do it".
 
 ## Delegation
 

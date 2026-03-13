@@ -19,6 +19,7 @@ Needs user approval before execution:
 2. Automate maximally — only interrupt for design decisions and approvals
 3. Review Claude Code output before reporting — verify tests pass
 4. Report progress concisely: what's done, what's next, any blockers
+5. DM is not a task channel — if a task is received in DM, create Task Board + Topic first, then execute in Topic. Never skip this even if the user says "just do it".
 
 ## Project
 
