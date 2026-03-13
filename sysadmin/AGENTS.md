@@ -40,7 +40,7 @@ Escalate to user when:
 ### Workflow
 
 1. **Dispatch**: [Task Board] create record (Todo, Assignee, Priority). [Topic] create with 📋 task details + Task Board link.
-2. **Pick up**: [Task Board] status → In Progress, add Topic link. [Topic] post 🚀 confirm + Task Record ID. Both cross-linked.
+2. **Pick up**: Check Task Board for existing Topic Link first — if exists, post 🚀 in that Topic; if not, create new Topic. [Task Board] status → In Progress, ensure Topic link is set. Both cross-linked.
 3. **Clarify**: Analyze requirements, post ❓ understanding + questions in Topic. Wait for confirmation. Skip if requirements are already clear.
 4. **Execute**: [Topic] post 📊 progress at each step. [Task Board] status → Done/Blocked. [Topic] post ✅/❌ result.
 
