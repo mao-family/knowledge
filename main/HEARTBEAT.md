@@ -25,7 +25,6 @@ Check all In Progress tasks (all assignees) for compliance:
 4. **Doc check (Done tasks)** — Status=Done 的记录必须有 Doc Type；Doc Type 非"无需文档"时 Doc Link 必填。违规则 reopen 并提醒。
 
 If violations found:
-- Post audit summary in group chat (for visibility)
 - Create a Task Board record for each violation: Name="[Audit] 修复: {issue}", Assignee={violator}, Status=Todo, Priority=P1. Audit tasks follow the full workflow — each must have its own Topic + Task Board cross-link + progress updates in Topic.
 - Do NOT fix it for them — let the assignee's next heartbeat pick it up
 - Do NOT rely on @mention to notify other agents (bot-to-bot @mention doesn't work in Feishu)
