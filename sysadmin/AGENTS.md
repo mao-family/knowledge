@@ -40,6 +40,7 @@ Escalate to user when:
 ### Workflow
 
 1. **Dispatch**: Dispatcher creates BOTH in one step: [Task Board] create record (Todo, Assignee, Priority) → [Topic] create with 📋 task details + Task Board link → update Task Board with Topic Link (cross-linked). Then `sessions_send` to nudge the assignee with Topic ID + Task Record ID. Topic creation is the dispatcher's responsibility — never the executor's.
+   - When dispatching to multiple assignees, create a separate Topic for EACH assignee — no exceptions, including Audit tasks.
 2. **Pick up**: Executor checks Task Board record has Topic Link. If Topic Link is missing → refuse to execute, create audit violation record instead. If Topic Link exists → post 🚀 in that Topic, update [Task Board] status → In Progress.
 3. **Clarify**: Analyze requirements, post ❓ understanding + questions in Topic. Wait for confirmation. Skip if requirements are already clear.
 4. **Execute**: [Topic] post 📊 progress at each step. [Task Board] status → Done/Blocked. [Topic] post ✅/❌ result.
