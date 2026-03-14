@@ -31,3 +31,4 @@
 - Heartbeat 领取任务也必须走 Dispatch→Pick up 流程：建 Topic → 关联 Task Board → 在 Topic 里汇报进度。不能因为是自己的任务就跳过（2026-03-13 教训）
 - Gateway restart 会断当前 session，restart 前必须在 Topic 里记录"即将 restart，预计断联"，避免 Boss 不知情手动干预（2026-03-13 教训）
 - Boss 指示：协助 MaoGen 排查 feishu_doc write/append 400 问题（2026-03-13）
+- Audit 任务无例外，必须完整走 workflow（Topic + Task Board + 进度记录）。不能因为"小任务"就跳过（2026-03-14 教训）
